@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/image_cart_item"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+           android:src="@drawable/circle" />
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="100dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+
+                android:gravity="start"
+                android:textStyle="bold"
+
+                android:text="Product Name" />
+            <TextView
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:text="Name" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="Phone Number" />
+            <TextView
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:visibility="invisible"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Sub Total" />
+            <TextView
+
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:gravity="start"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Seller" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:gravity="start"
+                android:id="@+id/tv_product_item_cart"
+
+                android:text="Apple" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/tv_quantity_item_cart"
+
+                android:layout_marginTop="10dp"
+                android:text="30" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_price_item_cart"
+                android:gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="10$" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:gravity="start"
+                android:id="@+id/tv_subtotal_item_cart"
+                android:layout_marginTop="10dp"
+                android:text="300$" />
+
+            <TextView
+
+                android:id="@+id/tv_seller_item_cart"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:text="John" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

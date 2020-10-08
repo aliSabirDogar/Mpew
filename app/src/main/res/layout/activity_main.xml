@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/first_login_background"
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/app_sign_uo_welcome"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+ />
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Total contactlists"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            />
+
+        <TextView
+            android:id="@+id/counter_uploaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="Uplaoded contactlists  0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            />
+        <EditText
+            android:id="@+id/signup_email"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="160dp"
+            android:background="#80000085"
+            android:ems="10"
+            android:hint="@string/app_email"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:selectAllOnFocus="false"
+            android:maxLines="1">
+
+        </EditText>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:id="@+id/signup_password"
+            style="@style/Widget.AppCompat.EditText"
+            android:maxLines="1"
+            android:hint="@string/app_password"
+            android:background="#80000085"
+            android:padding="5dp"
+
+            android:layout_below="@+id/signup_email"
+            android:layout_alignStart="@+id/signup_email"
+            android:layout_alignEnd="@+id/signup_email" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:id="@+id/signup_first_name"
+            style="@style/Widget.AppCompat.EditText"
+            android:maxLines="1"
+            android:hint="@string/app_sign_up_lastname"
+            android:background="#80000085"
+            android:padding="5dp"
+
+            android:layout_below="@+id/signup_name"
+            android:layout_alignStart="@+id/signup_name"
+            android:layout_alignEnd="@+id/signup_name" />
+
+        <EditText
+            android:id="@+id/signup_phone"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000085"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:maxLines="1"
+
+            android:layout_below="@+id/signup_first_name"
+            android:layout_alignEnd="@+id/signup_first_name"
+            android:layout_toEndOf="@+id/textView6" />
+
+        <Button
+            android:text="Sign up!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_signup"
+            android:background="@drawable/rounded_button"
+
+            android:layout_marginTop="62dp"
+            android:layout_below="@+id/signup_phone"
+            android:layout_alignEnd="@+id/signup_phone" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/signup_name"
+            style="@style/Widget.AppCompat.EditText"
+            android:maxLines="1"
+            android:hint="@string/app_sign_up_name"
+            android:background="#80000085"
+            android:padding="5dp"
+
+            android:layout_below="@+id/signup_password"
+            android:layout_alignEnd="@+id/signup_show"
+            android:layout_alignStart="@+id/signup_password"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/signup_show"
+            android:background="@android:drawable/ic_menu_view"
+            android:textColor="@drawable/colorTabUnselected"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/signup_password"
+            android:layout_alignEnd="@+id/signup_password"
+            android:layout_alignBottom="@+id/signup_password"
+            android:layout_width="40dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:background="#000085"
+            android:hapticFeedbackEnabled="true"
+            android:text="+33"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/colorTabUnselected"
+            android:layout_alignStart="@+id/signup_first_name"
+            android:layout_alignTop="@+id/signup_phone"
+            android:layout_alignBottom="@+id/signup_phone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

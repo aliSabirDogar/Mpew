@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#75a0fd</color>
+    <color name="colorPrimaryDark">#80011541</color>
+    <color name="colorAccent">#75a0fd</color>
+    <color name="colorthemelight">#6494fe</color>
+    <color name="socialviewSeparate">#0e17b8</color>
+
+    <drawable name="colorTabSelected">#80000085</drawable>
+    <drawable name="colorTabUnselected">#ffff</drawable>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="colorButton">#D0000085</drawable>
+</resources>
